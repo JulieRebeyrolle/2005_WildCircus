@@ -1,0 +1,375 @@
+/* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
+
+/* Ecris ici ton code CSS */
+
+/* GENERAL */ 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, nav{
+    font-family: "Amatic SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+}
+
+h2{
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+h3{
+    font-size: 35px;
+    padding-bottom: 30px;
+    font-weight: bold;
+
+}
+body{
+    font-family:"open sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.containerSection{
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* HEADER */ 
+
+.header{
+    background-image: url(https://www.pontoonproject.eu/sites/default/files/styles/full_width/public/images/Digital%20Aerial%20Circus%20photo.jpg?itok=lxyRKnM_);
+    /*background-image: url(https://www.artscouncil.org.uk/sites/default/files/Photo_%20Skins%20Elliot%20%281%29.jpg);
+    */
+    background-position: top;
+    width: 1000px auto;
+ }
+
+ .header h1{
+    font-size: 100px;
+    color: whitesmoke;
+    padding: 270px 0px 30px 0px;
+    
+}
+
+.button1{
+    display: block;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: #16020a8a;
+    border: dashed 1px whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Amatic SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 80px ; 
+}
+
+/* MENU */ 
+
+.header nav{
+    background-color:#c50854a2;
+    padding: 10px 15% 10px 15%;
+    justify-content: space-evenly;
+}
+
+.header nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    list-style: none;
+}
+
+.header nav ul li{
+    flex: 25%;
+}
+.header nav ul li a {
+    font-family: "Amatic SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    flex-basis: 20%;
+    padding: 10px 15% 10px 15%;
+}
+
+.menuTop:hover{
+    background-color:#e48fb1d0;
+    color: rgb(26, 3, 26);
+    font-weight: bold;
+}
+
+/* PERFORMANCES */ 
+
+.performances{
+    background-color:#05041d;
+    padding: 50px 10% 50px 10%;
+}
+
+.performances ul{
+    list-style: none;    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px){
+    .performances ul{
+        list-style: none;    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.performances ul li{
+    padding: 10px 5% 50px 5%;
+    flex-basis: 20%;
+    text-align: justify center;
+}
+
+.performances ul li h3{
+    padding-top: 30px;
+    font-size: 35px;
+    
+}
+
+.performances ul li p{
+    font-style: italic;
+}
+
+.rond{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px dotted white;
+    box-shadow: 0px 0px 15px 1px #eeeeee33;
+    -moz-box-shadow: 0px 0px 15px 1px #eeeeee33;
+    -webkit-box-shadow: 0px 0px 15px 1px #eeeeee33;
+}
+
+#perf1{
+    background-image: url(https://www.cirquedusoleil.com/-/media/cds/images/pressroom/photos/alegria/pop-up/cirquedusoleil_62_alegria2019_m-alemire.jpg?db=web&h=640&la=fr&vs=1&w=960&hash=FF82916D6D23CE5EE307E00C52A02E88F628E653);
+    background-size: auto 200px ;
+}
+
+#perf2{
+    background-image: url(https://fotos.perfil.com/2014/07/01/trim/1140/641/corteo-globos-inflados-con-helio-valentyna-pahlevanyan-y-mauro-mozzani.jpg);
+    background-size: auto 198px ;
+}
+
+#perf3{
+    background-image: url(https://www.cirquedusoleil.com/-/media/cds/images/pressroom/photos/alegria/pop-up/cirquedusoleil_71_alegria2019_m-alemire.jpg?db=web&h=640&la=fr&vs=1&w=960&hash=C21371E4BC188485690D3670203C5A7F8DD5A9B7);
+    background-size: auto 200px ;
+
+}
+
+
+/* ABOUT US*/ 
+
+.aboutus{
+    background-image: url(https://i.ibb.co/ZJhbtWn/Fire-2-00000.png);
+    background-position: center;
+    padding: 80px;
+    background-size: 100%;
+    background-repeat: repeat;   
+}
+
+
+
+.container {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    border-radius: 1%;
+    border: dotted 1px whitesmoke;
+   }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 1%;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #05041d;
+    border-radius: 1%;
+    opacity: 80%;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+  }
+  
+  .container:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-family: "Amatic SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:130%;
+    line-height: 150%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;}
+
+/* PRICES */
+
+.prices{
+    background-color:#05041d;
+    padding: 50px;
+}
+
+.prices table{
+    table-layout: fixed;
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 50px;
+}
+    
+.prices table th{
+    padding: 10px;
+    border-bottom: dotted 1px rgba(245, 245, 245, 0.5);
+    border-right: dotted 1px rgba(245, 245, 245, 0.5);
+}    
+
+.prices table td{
+    padding: 10px;
+    border: dotted 1px rgba(245, 245, 245, 0.5);
+    font-weight: bold;
+} 
+
+.borderTop{
+    border-top: dotted 1px rgba(245, 245, 245, 0.5);
+}
+
+.borderLeft{
+    border-left: dotted 1px rgba(245, 245, 245, 0.5);
+}
+
+
+/* CONTACT */
+
+.contact{
+    /*background-color: #FFF5EE;*/
+    padding: 50px;
+    background-image: url(https://i.ibb.co/1RX3XrS/Interior-circus-tent-2019-00000.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+.containerForm{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.labelForm {
+    display: block;
+    font-size: 15px;
+
+}
+#name{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    height: 20px;
+    width: 50%;
+    margin: 3px 1% 1% 1%;
+    border-radius: 3px;
+    border-style: none;
+}
+
+#email{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    height: 20px;
+    width: 50%;
+    border-radius: 3px;
+    border-style: none;
+    margin: 3px 1% 1% 1%;
+}
+
+
+#user_message{
+    display: block;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    height: 150px;
+    width: 50%;
+    margin-top: 3px;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button2{
+    display: block;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: #05041db4;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Amatic SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+    border: dotted 1px whitesmoke;
+    margin-bottom: 50px ; }
+
+
+
+
+/* FOOTER */ 
+footer{
+    background-color: #05041d;
+    padding: 10px;
+    color: white;
+    line-height: 50px;
+}
+
+.linkFooter{
+    text-decoration: none;
+    color: white;
+
+}
+
